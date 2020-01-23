@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="default-styles.css">
     <style>
         .grid{
-            height: 500px;
+            /*height: 500px;*/
             /*width: 500px;*/
             display: grid;
+
+            grid-template: repeat(3, 300px) / repeat(3, 1fr);
+            /*grid-column-gap: 20px;*/
+            /*grid-row-gap: 40px;*/
+            grid-gap: 30px 25px;
         /*    grid-template-columns: repeat(5, 1fr); !*явная сетка*!*/
 
         /*    grid-template-rows: repeat(3, 100px);*/
@@ -20,15 +25,15 @@
         /*'. . . c c'*/
         /*'b b . c c';*/
         /*    */
-            grid-template:
-                    'a . . . .' 100px
-                    '. . . c c' 100px
-                    'b b . c c' 100px
-        /100px 100px 100px 100px 100px;
+        /*    grid-template:*/
+        /*            'a . . . .' 300px*/
+        /*            '. . . c c' 300px*/
+        /*            'b b . c c' 300px*/
+        /*/1fr 1fr 1fr;*/
 
-            justify-content: center;
-            align-content: space-around;
-            place-content: center end;
+            /*justify-content: center;*/
+            /*align-content: space-around;*/
+            /*place-content: center end;*/
 
             /*justify-items: center;*/
             /*align-items: center;*/
@@ -39,27 +44,27 @@
             /*grid-auto-columns: 100px;  !*неявная сетка*!*/
 
         }
-        .grid__item:nth-child(1){
-            grid-area: a;
-            justify-self: center;
-            align-self: center;
-            place-self: center end;
-            /*grid-area: 1/1/2/2;*/
+        /*.grid__item:nth-child(1){*/
+        /*    grid-area: a;*/
+        /*    !*justify-self: center;*!*/
+        /*    !*align-self: center;*!*/
+        /*    !*place-self: center end;*!*/
+        /*    !*grid-area: 1/1/2/2;*!*/
 
-        }
-        .grid__item:nth-child(2){
+        /*}*/
+        /*.grid__item:nth-child(2){*/
 
-            grid-area: b;
-            /*grid-area: 3/1/4/3;*/
+        /*    grid-area: b;*/
+        /*    !*grid-area: 3/1/4/3;*!*/
 
-        }
-        .grid__item:nth-child(3) {
-            grid-area: c;
-            /*grid-column-start: 4;*/
-            /*grid-column-end: 6;*/
-            /*grid-row-start: 2;*/
-            /*grid-row-end: 4;*/
-            /*grid-area: 2/4/6/8;*/
+        /*}*/
+        /*.grid__item:nth-child(3) {*/
+        /*    grid-area: c;*/
+        /*    !*grid-column-start: 4;*!*/
+        /*    !*grid-column-end: 6;*!*/
+        /*    !*grid-row-start: 2;*!*/
+        /*    !*grid-row-end: 4;*!*/
+        /*    !*grid-area: 2/4/6/8;*!*/
 
 
         }
@@ -71,10 +76,10 @@
     <div class="grid__item">1</div>
     <div class="grid__item">2</div>
     <div class="grid__item">3</div>
-<!--    <div class="grid__item">4</div>-->
-<!--    <div class="grid__item">5</div>-->
-<!--    <div class="grid__item">6</div>-->
-<!--    <div class="grid__item">7</div>-->
+    <div class="grid__item">4</div>
+    <div class="grid__item">5</div>
+    <div class="grid__item">6</div>
+    <div class="grid__item">7</div>
 </div>
 
 
