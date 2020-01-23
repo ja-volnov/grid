@@ -5,6 +5,10 @@
 .grid__item {
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: red;
+    font-family: sans-serif;
+    font-size: 48px;
 }
 
 .grid__item:nth-child(3n +1 ){
