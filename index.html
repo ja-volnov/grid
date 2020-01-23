@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="default-styles.css">
     <style>
         .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /*явная сетка*/
 
+            /*grid-template-rows: 100px 100px 100px;*/
+
+            grid-auto-rows: 100px;  /*неявная сетка*/
+
+            grid-auto-columns: 100px;
         }
     </style>
 </head>
@@ -23,6 +30,8 @@
     <div class="grid__item">6</div>
     <div class="grid__item">7</div>
 </div>
+
+
 </body>
 
 </html>
