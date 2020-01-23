@@ -1,0 +1,20 @@
+.grid{
+    border: 5px solid chocolate;
+}
+
+.grid__item {
+    display: flex;
+    justify-content: center;
+}
+
+.grid__item:nth-child(3n +1 ){
+    background-color: aqua;
+}
+
+.grid__item:nth-child(3n + 2){
+    background-color: crimson;
+}
+
+.grid__item:nth-child(3n){
+    background-color: chocolate;
+}
